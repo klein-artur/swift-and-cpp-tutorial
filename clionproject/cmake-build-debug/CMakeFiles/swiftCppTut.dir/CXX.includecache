@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/artur/CLionProjects/swiftCppTut/Boss.cpp
+Boss.h
+/Users/artur/CLionProjects/swiftCppTut/Boss.h
+
+/Users/artur/CLionProjects/swiftCppTut/Boss.h
+Person.h
+/Users/artur/CLionProjects/swiftCppTut/Person.h
+
+/Users/artur/CLionProjects/swiftCppTut/Employee.cpp
+Employee.h
+/Users/artur/CLionProjects/swiftCppTut/Employee.h
+
+/Users/artur/CLionProjects/swiftCppTut/Employee.h
+Person.h
+/Users/artur/CLionProjects/swiftCppTut/Person.h
+Boss.h
+/Users/artur/CLionProjects/swiftCppTut/Boss.h
+
+/Users/artur/CLionProjects/swiftCppTut/Person.cpp
+Person.h
+/Users/artur/CLionProjects/swiftCppTut/Person.h
+
+/Users/artur/CLionProjects/swiftCppTut/Person.h
+string
+-
+

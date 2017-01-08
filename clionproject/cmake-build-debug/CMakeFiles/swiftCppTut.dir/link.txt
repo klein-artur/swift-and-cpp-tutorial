@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libswiftCppTut.a  CMakeFiles/swiftCppTut.dir/Person.cpp.o CMakeFiles/swiftCppTut.dir/Employee.cpp.o CMakeFiles/swiftCppTut.dir/Boss.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libswiftCppTut.a

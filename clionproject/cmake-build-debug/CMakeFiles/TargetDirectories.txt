@@ -1,0 +1,3 @@
+/Users/artur/CLionProjects/swiftCppTut/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/artur/CLionProjects/swiftCppTut/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/artur/CLionProjects/swiftCppTut/cmake-build-debug/CMakeFiles/swiftCppTut.dir
