@@ -13,6 +13,7 @@
 		75B4D27D1E21B54E00C7221C /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B4D27C1E21B54E00C7221C /* Boss.swift */; };
 		75B4D27F1E21B64900C7221C /* String_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B4D27E1E21B64900C7221C /* String_extension.swift */; };
 		75B4D2811E21BCF200C7221C /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B4D2801E21BCF200C7221C /* Employee.swift */; };
+		75B4D2831E22608F00C7221C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B4D2821E22608F00C7221C /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,7 @@
 		75B4D27C1E21B54E00C7221C /* Boss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boss.swift; sourceTree = "<group>"; };
 		75B4D27E1E21B64900C7221C /* String_extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String_extension.swift; sourceTree = "<group>"; };
 		75B4D2801E21BCF200C7221C /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		75B4D2821E22608F00C7221C /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				75B4D27C1E21B54E00C7221C /* Boss.swift */,
 				75B4D27E1E21B64900C7221C /* String_extension.swift */,
 				75B4D2801E21BCF200C7221C /* Employee.swift */,
+				75B4D2821E22608F00C7221C /* Person.swift */,
 			);
 			path = SwiftCppTut;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B4D2831E22608F00C7221C /* Person.swift in Sources */,
 				75B4D27F1E21B64900C7221C /* String_extension.swift in Sources */,
 				75B4D26B1E21960B00C7221C /* main.swift in Sources */,
 				75B4D27B1E21A92700C7221C /* wrapper.cpp in Sources */,
@@ -304,6 +308,7 @@
 				75B4D2701E21960B00C7221C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

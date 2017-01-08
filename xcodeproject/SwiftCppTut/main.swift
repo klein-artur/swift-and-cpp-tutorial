@@ -13,11 +13,11 @@ print ("Positions of Obama:")
 
 let boss = Boss(name: "Barack Obama", age: 55, department: "US-Government")
 
-print(boss.getDepartment())
+print(boss.department)
 
-boss.setDepartment("Not US-Government")
+boss.department = "Not US-Government"
 
-print(boss.getDepartment())
+print(boss.department)
 */
 
 print ("My Boss is:")
@@ -27,3 +27,6 @@ let boss = Boss(name: "Barack Obama", age: 55, department: "US-Government")
 let employee = Employee(name: "John Doe", age: 29, boss: boss)
 
 print (employee.getBossInfo())
+
+print ("My name is: \(employee.name)")
+print ("My age is: \(employee.age)")

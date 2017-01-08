@@ -8,19 +8,13 @@
 
 import Cocoa
 
-class Employee: NSObject {
-    private var cpp_employee_pointer: UnsafeMutableRawPointer
+class Employee: Person {
     
     init(name: String, age: Int, boss: Boss) {
-        self.cpp_employee_pointer = employee_init(name.cCharArray, Int32(age), boss.cpp_boss_pointer)
-        super.init()
+        super.init(withPointer: employee_init(name.cCharArray, Int32(age), boss.cpp_pointer))
     }
     
     func getBossInfo() -> String {
-        return String(cString: employee_get_boss_info(self.cpp_employee_pointer))
-    }
-    
-    deinit {
-        employee_deconstructor(self.cpp_employee_pointer)
+        return String(cString: employee_get_boss_info(self.cpp_pointer))
     }
 }

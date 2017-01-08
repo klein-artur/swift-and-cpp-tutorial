@@ -46,3 +46,34 @@ extern "C" const char * employee_get_boss_info(const void *const employee) {
     const Employee *const e = (Employee *) employee;
     return e->get_boss_infos().c_str();
 }
+
+// Person:
+extern "C" void * person_init(const char *name, const int age) {
+    Person *p = new Person(string(name), age);
+    return p;
+}
+
+extern "C" void person_deconstructor(const void *const person) {
+    const Person *const p = (Person *) person;
+    delete p;
+}
+
+extern "C" const char * person_getName(const void *const person) {
+    const Person *const p = (Person *) person;
+    return p->getName().c_str();
+}
+
+extern "C" void person_setName(void *const person, const char *const name) {
+    Person *const p = (Person *) person;
+    p->setName(string(name));
+}
+
+extern "C" const int person_getAge(const void *const person) {
+    const Person *const p = (Person *) person;
+    return p->getAge();
+}
+
+extern "C" void person_setAge(void *const person, const int age) {
+    Person *const p = (Person *) person;
+    p->setAge(age);
+}

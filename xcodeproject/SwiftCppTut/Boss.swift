@@ -8,22 +8,18 @@
 
 import Cocoa
 
-class Boss: NSObject {
-    public var cpp_boss_pointer: UnsafeMutableRawPointer
+class Boss: Person {
+    
+    public var department: String {
+        get {
+            return String(cString: boss_getDepartment(self.cpp_pointer))
+        }
+        set {
+            boss_setDepartment(self.cpp_pointer, department.cCharArray)
+        }
+    }
 
     init(name: String, age: Int, department: String) {
-        self.cpp_boss_pointer = boss_init(name.cCharArray, Int32(age), department.cCharArray)
-        super.init()
-    }
-    
-    func getDepartment() -> String {
-        return String(cString: boss_getDepartment(self.cpp_boss_pointer))
-    }
-    func setDepartment(_ department: String) {
-        boss_setDepartment(self.cpp_boss_pointer, department.cCharArray)
-    }
-    
-    deinit {
-        boss_deconstructor(self.cpp_boss_pointer)
+        super.init(withPointer: boss_init(name.cCharArray, Int32(age), department.cCharArray))
     }
 }
